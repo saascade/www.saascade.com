@@ -9,14 +9,18 @@
     <meta name="description" content="Software to build software. Reduce the amount of skills, time and money required to build great software systems." />
     <meta name="keywords" content="Low-code, Software Development, Domain-Driven Design, Event Storming, Event Sourcing, 10x Software Development, Software Architecture" />
     <meta name="author" content="SaaScade Ltd." />
+
+    <link rel="preload" href="../../fonts/code.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
-     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet" />
      <style>
        .gradient {
         background: linear-gradient(90deg, #191cce 0%, #0594c0 100%);
       }
     </style>
-
+    <link rel="stylesheet" href="../../css/code.css" type="text/css">
+    <link rel="stylesheet" href="../../css/code.dark.css" type="text/css" media="(prefers-color-scheme: dark)">
+    
     <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
     <script type="text/javascript">
       //sandbox=14340
@@ -139,22 +143,28 @@
 					<strong>TrailerDownloader makes downloading the trailers for your movies a breeze.</strong> TrailerDownloader will automatically match your files with information 
 					on TheMovieDB, and then download the corresponding trailers from YouTube, placing then next to your movies. For the matching process to work correctly please stick to the <a href="manual/plex.html">{plex}</a> naming standard.
 				</p>
-				<ol>
-					<li><a href="#download">Download</a> TrailerDownloader</li>
-					<li>Buy a licence and place it in the same folder as TrailerDownloader</li>
-					<li>Run TrailerDownloader from a simple batch file or shortcut</li>
-				</ol>
+
+        <div class="rounded-md bg-gray-200 p-2 px-8 m-2 text-gray-800">
+          <ol class="list-decimal">
+            <li><a href="#download">Download</a> TrailerDownloader</li>
+            <li>Buy a licence and place it in the same folder as TrailerDownloader</li>
+            <li>Run TrailerDownloader from a simple batch file or shortcut</li>
+          </ol>
+        </div>
+				
  
 				<p>
 					<strong>Run TrailerDownloader from a <a href="manual/plex.html">batch file</a></strong> with three simple inputs.
 				</p>
-				<ol>
-					<li>The path to your movies</li>
-					<li>Your API key for TheMovieDB</li>
-					<li>The language you want to use for the trailers</li>
-				</ol>
+        <div class="rounded-md bg-gray-200 p-2 px-8 m-2 text-gray-800">
+          <ol class="list-decimal">
+            <li>The path to your movies</li>
+            <li>Your API key for TheMovieDB</li>
+            <li>The language you want to use for the trailers</li>
+          </ol>
+        </div> 
 				<code>
-          <kbd class="cmd">TrailerDownloader</kbd> 
+          <kbd class="cmd">TrailerDownloader.exe</kbd> 
           <kbd class="option">"C:\Movies"</kbd> 
           <kbd class="argument">"yourapkikey35123$q1234"</kbd> <kbd class="option">"en"</kbd>
         </code>
